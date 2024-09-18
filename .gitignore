@@ -22,4 +22,4 @@ terraform.rc
 
 # Ignore sensitive files
 *.pem
-*.key
+*.key.terraform/
