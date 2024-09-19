@@ -3,7 +3,6 @@
 This project sets up a CI/CD pipeline using AWS CodePipeline, CodeDeploy, and EC2 instances. The pipeline is configured to detect changes in a GitHub repository and deploy those changes to an EC2 instance. The entire infrastructure is managed using Terraform.
 
 ## Prerequisites
-
 - [Terraform](https://www.terraform.io/downloads.html) installed on your machine
 - An AWS account with appropriate permissions
 - A GitHub account and repository
@@ -16,8 +15,8 @@ I used a simple HTML file to build a website that shows "Hello World".
 ## Terraform Files
 Below are the necessary Terraform files included in this project and their uses:
 
-## Project Structure
 
+## Project Structure
 The project is divided into several Terraform configuration files:
 
 - `provider.tf`: Defines the AWS provider and region. This file sets up the AWS provider, which is necessary for Terraform to interact with AWS services.
