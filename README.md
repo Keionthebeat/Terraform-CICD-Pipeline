@@ -32,7 +32,7 @@ Initialize Terraform: Run the following command to initialize Terraform.
 - terraform init
 
 Plan the Deployment: Run the following command to see the execution plan.
-- terraform Plan 
+- terraform plan 
 
 Apply the Deployment: Run the following command to apply the changes.
 - terraform apply 
@@ -40,13 +40,13 @@ Apply the Deployment: Run the following command to apply the changes.
 Verify the Setup: Push changes to your GitHub repository and check AWS CodePipeline to see if it detects the changes and triggers the pipeline. Verify that the changes are deployed to the EC2 instance.
 
 ## Notes
-Region: Change the region in provider.tf to your desired AWS region.
-Bucket Name: Change the bucket name in s3.tf to a unique name.
-Role Name: Change the role name in iam.tf if desired.
-Pipeline Name: Change the pipeline name in codepipeline.tf.
-GitHub Configuration: Update the GitHub username, repository name, branch, and OAuth token in codepipeline.tf.
-Application and Deployment Group Names: Change the application name and deployment group name in codedeploy.tf.
-EC2 Instance Configuration: Change the AMI ID, instance type, and instance name in ec2.tf.
+- Region: Change the region in provider.tf to your desired AWS region.
+- Bucket Name: Change the bucket name in s3.tf to a unique name.
+- Role Name: Change the role name in iam.tf if desired.
+- Pipeline Name: Change the pipeline name in codepipeline.tf.
+- GitHub Configuration: Update the GitHub username, repository name, branch, and OAuth token in codepipeline.tf.
+- Application and Deployment Group Names: Change the application name and deployment group name in codedeploy.tf.
+- EC2 Instance Configuration: Change the AMI ID, instance type, and instance name in ec2.tf.
 
 ## Cleanup
 To destroy the resources created by Terraform, run the following command:
