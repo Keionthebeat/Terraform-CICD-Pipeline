@@ -3,18 +3,17 @@
 This project sets up a CI/CD pipeline using AWS CodePipeline, CodeDeploy, and EC2 instances. The pipeline is configured to detect changes in a GitHub repository and deploy those changes to an EC2 instance. The entire infrastructure is managed using Terraform.
 
 ## Prerequisites
-- [Terraform](https://www.terraform.io/downloads.html) installed on your machine
-- An AWS account with appropriate permissions
-- A GitHub account and repository
-- AWS CLI configured with your credentials
-- GitHub Personal Access Token
+- [Terraform](https://www.terraform.io/downloads.html) installed on your machine.
+- An AWS account with appropriate permissions.
+- A GitHub account and repository.
+- AWS CLI configured with your credentials. (I use GitBash)
+- GitHub Personal Access Token.
 
 ## Website
 I used a simple HTML file to build a website that shows "Hello World".
 
 ## Terraform Files
-Below are the necessary Terraform files included in this project and their uses:
-
+Below are the necessary Terraform files included in this project and their uses.
 
 ## Project Structure
 The project is divided into several Terraform configuration files:
@@ -30,13 +29,13 @@ The project is divided into several Terraform configuration files:
 
 ## How to Deploy
 Initialize Terraform: Run the following command to initialize Terraform.
-~terraform init
+- terraform init
 
 Plan the Deployment: Run the following command to see the execution plan.
-~terraform Plan 
+- terraform Plan 
 
 Apply the Deployment: Run the following command to apply the changes.
-~terraform apply 
+- terraform apply 
 
 Verify the Setup: Push changes to your GitHub repository and check AWS CodePipeline to see if it detects the changes and triggers the pipeline. Verify that the changes are deployed to the EC2 instance.
 
@@ -51,23 +50,23 @@ EC2 Instance Configuration: Change the AMI ID, instance type, and instance name 
 
 ## Cleanup
 To destroy the resources created by Terraform, run the following command:
-~terraform destroy
+- terraform destroy
 
 
 ## Pushing Code to GitHub
 To push all of the code to GitHub, follow these steps:
 
 - Initialize a Git Repository: If you haven't already, initialize a Git repository in your project directory.
-git init
+`git init`
 
 - Add Remote Repository: Add your GitHub repository as a remote.
-git remote add origin https://github.com/your-github-username/your-repo-name.git
+`git remote add origin https://github.com/your-github-username/your-repo-name.git` (Make sure you replace with your own github and reposotory)
 
 - Add Files: Add all the files to the staging area.
-git add .
+`git add .`
 
 - Commit Changes: Commit the changes with a message.
-git commit -m "Initial commit"
+`git commit -m "Initial commit"`
 
 - Push to GitHub: Push the changes to the remote repository.
-git push -u origin main
+`git push`
