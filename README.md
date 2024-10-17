@@ -1,5 +1,5 @@
 # AWS CI/CD Pipeline with Terraform
-![ci/cd](CICD.PNG)
+![ci/cd](./CICD.PNG)
 
 The CI/CD pipeline is set up using AWS CodePipeline, CodeDeploy, and EC2 instances. The pipeline detects changes in a GitHub repository and deploys those changes to an EC2 instance. The infrastructure is managed using Terraform, which includes configuration files for setting up the AWS provider, S3 bucket for artifacts, IAM roles and policies, CodePipeline, CodeDeploy application and deployment group, EC2 instance, and CodeStar connection to GitHub.
 
